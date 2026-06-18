@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
 import "../Styles/imageModel.css";
 import { FaTimes, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
@@ -23,14 +24,14 @@ const ImageModal = ({ images, onClose }) => {
 
   const currentMedia = images[current];
   const isVideo = typeof currentMedia === "string" && (
-    currentMedia.includes(".mp4") || 
-    currentMedia.includes(".webm") || 
+    currentMedia.includes(".mp4") ||
+    currentMedia.includes(".webm") ||
     currentMedia.includes(".ogg")
   );
 
-  return (
-    <div className="modal-overlay">
-      <div className="modal-content slider">
+  const modalContent = (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content slider" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>
           <FaTimes />
         </button>
@@ -67,6 +68,8 @@ const ImageModal = ({ images, onClose }) => {
       </div>
     </div>
   );
+
+  return ReactDOM.createPortal(modalContent, document.body);
 };
 
 export default ImageModal;
