@@ -1,0 +1,45 @@
+/* ==========================================================================
+   GLOBAL THEME COLOR TOKENS (CYAN-BASED PALETTE)
+   ========================================================================== */
+
+:root {
+  /* 🎨 Core Accent & Brand Colors */
+  --color-primary: #00f2ff;           /* Vibrant Cyan Accent */
+  --color-secondary: #00b4d8;         /* Medium Cyan/Blue Accent */
+  --color-accent: #00e5ff;            /* Secondary Cyan Accent */
+  --color-cyan-light: #80deea;        /* Light Cyan Accent */
+
+  /* 🌙 Deep Base Backgrounds (Navy/Cyan Base) */
+  --color-bg-main: #01040f;           /* Main Background */
+  --color-bg-card: rgba(11, 25, 44, 0.55); /* Reusable Glassmorphism Card BG */
+  --color-bg-skills: rgba(11, 25, 44, 0.45); /* Deep Skills Card BG */
+  --color-bg-skills-card: rgba(255, 255, 255, 0.03); /* Individual Skill Card BG */
+  --color-bg-overlay: rgba(1, 4, 15, 0.55); /* Dark Video Overlay */
+  --color-bg-modal: #07111e;          /* Video Modal BG */
+
+  /* 🧊 Glass Borders & Dividers */
+  --color-border: rgba(0, 242, 255, 0.15); /* Default Cyan Glass Card Border */
+  --color-border-skills: rgba(0, 242, 255, 0.1); /* Skills Card Outer Border */
+  --color-border-skills-card: rgba(255, 255, 255, 0.05); /* Individual Skill Inner Border */
+
+  /* 📝 Typography Color Hierarchy */
+  --color-text-main: #ffffff;         /* High-emphasis Text */
+  --color-text-muted: #c0c5cf;        /* Medium-emphasis Subtext/Body */
+  --color-text-dark: #000000;         /* Dark Text on Light Backgrounds */
+
+  /* ✨ Glows, Shadows & Interactivities */
+  --color-glow-primary: rgba(0, 242, 255, 0.12); /* Cyan Hover Glow */
+  --color-glow-primary-hover: rgba(0, 242, 255, 0.28); /* Cyan Hover Strong Border Glow */
+  --color-glow-primary-strong: rgba(0, 242, 255, 0.45); /* Cyan Hover Strong Highlight Glow */
+  --color-glow-btn-hover: rgba(0, 242, 255, 0.4); /* Button Cyan Drop Shadow Glow */
+
+  /* 🔄 Compatibility Aliases */
+  --primary: var(--color-primary);
+  --secondary: var(--color-secondary);
+  --accent: var(--color-accent);
+  --bg-main: var(--color-bg-main);
+  --bg-card: var(--color-bg-card);
+  --text-main: var(--color-text-main);
+  --text-muted: var(--color-text-muted);
+  --border-color: var(--color-border);
+}

@@ -1,0 +1,191 @@
+/* =================================
+   GLOBAL THEME COLOR SYSTEM
+   ================================= */
+@import "./Styles/colors.css";
+
+:root {
+  /* 🧊 Blur */
+  --glass-blur: blur(14px);
+}
+
+/* =================================
+   RESET
+================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* =================================
+   BODY
+================================= */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+
+  background: var(--bg-main);
+  color: var(--text-main);
+  overflow-x: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =================================
+   REACT ROOT
+================================= */
+#root {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+/* =================================
+   VIDEO BACKGROUND
+================================= */
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark overlay */
+.video-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 4, 10, 0.55);
+  z-index: 1;
+}
+
+/* =================================
+   GLASS CARD (Reusable)
+================================= */
+.glass-card {
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+
+  padding: 24px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+
+  transition: all 0.35s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: var(--primary);
+  box-shadow: 0 35px 90px rgba(0, 242, 255, 0.15);
+}
+
+/* =================================
+   SECTION LAYOUT
+================================= */
+section {
+  position: relative;
+  padding: 100px 8%;
+  z-index: 1;
+}
+
+
+/* =================================
+   FLEX GRID
+================================= */
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.flex-grid > * {
+  flex: 1 1 280px;
+}
+
+/* =================================
+   BUTTON
+================================= */
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 30px;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--accent)
+  );
+
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(255, 78, 205, 0.4);
+}
+
+/* =================================
+   TEXT SELECTION
+================================= */
+::selection {
+  background: var(--primary);
+  color: #000;
+}
+
+/* =================================
+   LINKS
+================================= */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =================================
+   CODE
+================================= */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* =================================
+   MOBILE FALLBACK
+================================= */
+@media (max-width: 768px) {
+  section {
+    padding: 70px 6%;
+  }
+
+
+  .video-bg video {
+    display: none;
+  }
+
+  body {
+    background: var(--bg-main);
+  }
+}

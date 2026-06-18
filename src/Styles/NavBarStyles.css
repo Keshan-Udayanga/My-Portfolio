@@ -1,0 +1,159 @@
+/* ===== NAVBAR ===== */
+.custom-navbar {
+  padding: 16px 0;
+  background: var(--color-bg-main);
+  border-bottom: 1px solid var(--color-primary);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* Main wrapper */
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* ===== LEFT ===== */
+.nav-logo h2 {
+  margin: 0;
+  font-weight: 700;
+  color: #fff;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-logo span {
+  color: var(--color-primary);
+}
+
+/* ===== CENTER ===== */
+.nav-links {
+  display: flex;
+  gap: 45px;
+}
+
+.nav-links a {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -6px;
+  background: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-primary);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ===== BUTTON ===== */
+.cv-btn {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 22px;
+  border-radius: 25px;
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 1;
+  transition: color 0.35s ease;
+}
+
+.cv-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background: var(--color-primary);
+  z-index: -1;
+  transition: height 0.35s ease;
+}
+
+.cv-btn:hover::before {
+  height: 100%;
+}
+
+.cv-btn:hover {
+  color: var(--color-text-dark);
+}
+
+/* ===== MOBILE ICON ===== */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ===== MOBILE MENU ===== */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100vh;
+  background: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 30px;
+  gap: 40px;
+  transition: left 0.4s ease;
+  z-index: 999;
+}
+
+.mobile-menu.show {
+  left: 0;
+}
+
+.mobile-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .custom-navbar{
+    background-color: var(--bg-main);
+  }
+  .nav-wrapper{
+    justify-content:space-between;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .cv-btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
