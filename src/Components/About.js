@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../Styles/About.css";
-import profileImg from "../assets/profileImg.png"; 
+import profileImg from "../assets/profileImg.png";
 import IconButton from "@mui/material/IconButton";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -9,10 +9,10 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 
 const titles = [
-  "Web Designer  ",
-  "Frontend Developer  ",
-  "Full Stack Developer  ",
-  "Graphic Designer  "
+  "Data Science Undergraduate ",
+  "Web Designer ",
+  "Frontend Developer ",
+  "Data Analytics Enthusiast "
 ];
 
 const About = () => {
@@ -44,7 +44,7 @@ const About = () => {
   return (
     <section className="about-section" id="about">
       <div className="about-container">
-        
+
         {/* LEFT CONTENT */}
         <div className="about-left">
           <h3>Hello, I’m</h3>
@@ -56,34 +56,35 @@ const About = () => {
           </h2>
 
           <p>
-            I am a passionate Web Designer and Full Stack Developer who loves
-            creating modern, user-friendly, and visually appealing digital experiences.
-            I specialize in frontend development, UI/UX design, and graphic design,
-            focusing on clean code and intuitive interfaces.
+            A motivated undergraduate pursuing a degree in Data Science, with a
+            strong interest in web design, graphic design, and data analysis. Currently
+            developing practical and technical skills through independent learning,
+            with the aim of applying analytical thinking and creative problem-solving
+            to real-world projects and professional growth.
           </p>
 
-        <div className="social-icons">
+          <div className="social-icons">
             <IconButton color="primary" aria-label="GitHub" component="a" href="https://github.com/yourusername" target="_blank">
-                <GitHubIcon />
+              <GitHubIcon />
             </IconButton>
 
             <IconButton color="primary" aria-label="LinkedIn" component="a" href="https://linkedin.com/in/yourusername" target="_blank">
-                <LinkedInIcon />
+              <LinkedInIcon />
             </IconButton>
 
             <IconButton color="primary" aria-label="WhatsApp" component="a" href="https://wa.me/94778907002" target="_blank">
-                <WhatsAppIcon />
+              <WhatsAppIcon />
             </IconButton>
-        </div>
+          </div>
 
-        <div>
+          <div>
             <button className="contact-btn">
-                <span>Contact Me</span>
+              <span>Contact Me</span>
             </button>
             <button className="about-cv-btn">
-                <span>Download CV</span>
+              <span>Download CV</span>
             </button>
-        </div>
+          </div>
 
 
         </div>
