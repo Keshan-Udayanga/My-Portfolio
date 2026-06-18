@@ -14,7 +14,7 @@
   width: 90%;
   max-width: 900px;
   height: 80vh;
-  background: #0b0f1a;
+  background: var(--color-bg-modal);
   border-radius: 16px;
   display: flex;
   align-items: center;

@@ -2,7 +2,7 @@
 .custom-navbar {
   padding: 16px 0;
   background: var(--color-bg-main);
-  border-bottom: 1px solid var(--color-primary);
+  border-bottom: 1px solid var(--color-border);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -66,6 +66,7 @@
 
 /* ===== BUTTON ===== */
 .cv-btn {
+  display: inline-block;
   position: relative;
   overflow: hidden;
   padding: 10px 22px;
@@ -76,27 +77,13 @@
   font-weight: 600;
   cursor: pointer;
   z-index: 1;
+  text-decoration: none;
   transition: color 0.35s ease;
 }
 
-.cv-btn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 0%;
-  background: var(--color-primary);
-  z-index: -1;
-  transition: height 0.35s ease;
-}
-
-.cv-btn:hover::before {
-  height: 100%;
-}
-
 .cv-btn:hover {
-  color: var(--color-text-dark);
+  background: var(--primary);
+  color: #000;
 }
 
 /* ===== MOBILE ICON ===== */
@@ -114,7 +101,7 @@
   left: -100%;
   width: 70%;
   height: 100vh;
-  background: #0d0d0d;
+  background: var(--color-bg-modal);
   display: flex;
   flex-direction: column;
   padding: 80px 30px;
@@ -137,14 +124,16 @@
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  .custom-navbar{
+  .custom-navbar {
     background-color: var(--bg-main);
   }
-  .nav-wrapper{
-    justify-content:space-between;
+
+  .nav-wrapper {
+    justify-content: space-between;
     margin-left: 10%;
     margin-right: 5%;
   }
+
   .nav-links {
     display: none;
   }

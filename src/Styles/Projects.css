@@ -87,7 +87,8 @@
   margin-top: auto;
 }
 
-.project-links a {
+.project-links a,
+.project-links button {
   flex: 1;
   text-align: center;
   padding: 10px 0;
@@ -96,8 +97,15 @@
   font-weight: 500;
   transition: all 0.3s ease;
   border: 1px solid var(--color-primary);
+  background: transparent;
+  color: var(--color-text-main);
+  cursor: pointer;
 }
 
+.project-links a {
+  background-color: aliceblue;
+  color: var(--color-bg-main);
+}
 
 
 .btn-demo {

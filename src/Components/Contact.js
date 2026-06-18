@@ -50,8 +50,8 @@ const contactItems = [
     icon: <FaDownload />,
     label: "CV",
     value: "Download CV",
-    href: "/cv.pdf",
-    download: true,
+    href: "/keshan-udayanga-cv.pdf",
+    download: "Keshan-Udayanga-CV.pdf",
   },
 ];
 

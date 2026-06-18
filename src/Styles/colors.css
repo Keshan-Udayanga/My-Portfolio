@@ -1,37 +1,57 @@
 /* ==========================================================================
-   GLOBAL THEME COLOR TOKENS (CYAN-BASED PALETTE)
+   GLOBAL THEME COLOR TOKENS (DARK GREEN + GOLD PALETTE)
    ========================================================================== */
 
 :root {
   /* 🎨 Core Accent & Brand Colors */
-  --color-primary: #00f2ff;           /* Vibrant Cyan Accent */
-  --color-secondary: #00b4d8;         /* Medium Cyan/Blue Accent */
-  --color-accent: #00e5ff;            /* Secondary Cyan Accent */
-  --color-cyan-light: #80deea;        /* Light Cyan Accent */
+  --color-primary: #f0c040;
+  /* Vibrant Gold Accent */
+  --color-secondary: #d4a017;
+  /* Medium Gold Accent */
+  --color-accent: #ffd166;
+  /* Light Gold Accent */
+  --color-cyan-light: #f5d78e;
+  /* Soft Gold Tint (replaces cyan-light) */
 
-  /* 🌙 Deep Base Backgrounds (Navy/Cyan Base) */
-  --color-bg-main: #01040f;           /* Main Background */
-  --color-bg-card: rgba(11, 25, 44, 0.55); /* Reusable Glassmorphism Card BG */
-  --color-bg-skills: rgba(11, 25, 44, 0.45); /* Deep Skills Card BG */
-  --color-bg-skills-card: rgba(255, 255, 255, 0.03); /* Individual Skill Card BG */
-  --color-bg-overlay: rgba(1, 4, 15, 0.55); /* Dark Video Overlay */
-  --color-bg-modal: #07111e;          /* Video Modal BG */
+  /* 🌿 Deep Base Backgrounds (Teal-Forest Green) */
+  --color-bg-main: #043F39;
+  /* Main Background - Very Deep Teal-Green */
+  --color-bg-card: rgba(6, 75, 68, 0.60);
+  /* Glassmorphism Card BG */
+  --color-bg-skills: rgba(6, 75, 68, 0.50);
+  /* Deep Skills Card BG */
+  --color-bg-skills-card: rgba(255, 255, 255, 0.03);
+  /* Individual Skill Card BG */
+  --color-bg-overlay: rgba(2, 30, 27, 0.60);
+  /* Dark Overlay */
+  --color-bg-modal: #02221f;
+  /* Modal BG */
 
-  /* 🧊 Glass Borders & Dividers */
-  --color-border: rgba(0, 242, 255, 0.15); /* Default Cyan Glass Card Border */
-  --color-border-skills: rgba(0, 242, 255, 0.1); /* Skills Card Outer Border */
-  --color-border-skills-card: rgba(255, 255, 255, 0.05); /* Individual Skill Inner Border */
+  /* 🌿 Glass Borders & Dividers */
+  --color-border: rgba(240, 192, 64, 0.18);
+  /* Gold Glass Card Border */
+  --color-border-skills: rgba(240, 192, 64, 0.12);
+  /* Skills Card Outer Border */
+  --color-border-skills-card: rgba(255, 255, 255, 0.05);
+  /* Individual Skill Inner Border */
 
   /* 📝 Typography Color Hierarchy */
-  --color-text-main: #ffffff;         /* High-emphasis Text */
-  --color-text-muted: #c0c5cf;        /* Medium-emphasis Subtext/Body */
-  --color-text-dark: #000000;         /* Dark Text on Light Backgrounds */
+  --color-text-main: #ffffff;
+  /* High-emphasis Text */
+  --color-text-muted: #9ab5b2;
+  /* Medium-emphasis Subtext — tealish muted */
+  --color-text-dark: #043F39;
+  /* Dark Text on Light/Gold Backgrounds */
 
   /* ✨ Glows, Shadows & Interactivities */
-  --color-glow-primary: rgba(0, 242, 255, 0.12); /* Cyan Hover Glow */
-  --color-glow-primary-hover: rgba(0, 242, 255, 0.28); /* Cyan Hover Strong Border Glow */
-  --color-glow-primary-strong: rgba(0, 242, 255, 0.45); /* Cyan Hover Strong Highlight Glow */
-  --color-glow-btn-hover: rgba(0, 242, 255, 0.4); /* Button Cyan Drop Shadow Glow */
+  --color-glow-primary: rgba(240, 192, 64, 0.12);
+  /* Gold Hover Glow */
+  --color-glow-primary-hover: rgba(240, 192, 64, 0.30);
+  /* Gold Hover Strong Border */
+  --color-glow-primary-strong: rgba(240, 192, 64, 0.50);
+  /* Gold Strong Highlight */
+  --color-glow-btn-hover: rgba(240, 192, 64, 0.40);
+  /* Button Gold Drop Shadow */
 
   /* 🔄 Compatibility Aliases */
   --primary: var(--color-primary);

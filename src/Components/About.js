@@ -64,11 +64,11 @@ const About = () => {
           </p>
 
           <div className="social-icons">
-            <IconButton color="primary" aria-label="GitHub" component="a" href="https://github.com/yourusername" target="_blank">
+            <IconButton color="primary" aria-label="GitHub" component="a" href="https://github.com/Keshan-Udayanga" target="_blank">
               <GitHubIcon />
             </IconButton>
 
-            <IconButton color="primary" aria-label="LinkedIn" component="a" href="https://linkedin.com/in/yourusername" target="_blank">
+            <IconButton color="primary" aria-label="LinkedIn" component="a" href="https://www.linkedin.com/in/keshan-udayanga-6b526b347/" target="_blank">
               <LinkedInIcon />
             </IconButton>
 
@@ -77,13 +77,17 @@ const About = () => {
             </IconButton>
           </div>
 
-          <div>
+          <div className="about-btn">
             <button className="contact-btn">
-              <span>Contact Me</span>
+              <span><a href="#contact">Contact Me</a></span>
             </button>
-            <button className="about-cv-btn">
+            <a
+              className="about-cv-btn"
+              href="/keshan-udayanga-cv.pdf"
+              download="Keshan-Udayanga-CV.pdf"
+            >
               <span>Download CV</span>
-            </button>
+            </a>
           </div>
 
 
@@ -91,7 +95,9 @@ const About = () => {
 
         {/* RIGHT IMAGE */}
         <div className="about-right">
-          <img src={profileImg} alt="Profile" />
+          <div className="profile-img-wrapper">
+            <img src={profileImg} alt="Profile" />
+          </div>
         </div>
 
       </div>

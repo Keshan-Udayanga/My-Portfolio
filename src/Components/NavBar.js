@@ -38,9 +38,13 @@ const NavBar = () => {
           </div>
 
           {/* RIGHT */}
-          <button className="cv-btn">
+          <a
+            className="cv-btn"
+            href="/keshan-udayanga-cv.pdf"
+            download="Keshan-Udayanga-CV.pdf"
+          >
             <span>Download CV</span>
-          </button>
+          </a>
 
           {/* MOBILE ICON */}
           <div

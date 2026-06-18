@@ -33,7 +33,7 @@
 /* Accent word inside heading */
 .section-title .highlight {
   color: var(--color-primary);
-  text-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+  text-shadow: 0 0 20px rgba(240, 192, 64, 0.4);
 }
 
 /* Descriptive text below section heading */
