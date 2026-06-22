@@ -43,6 +43,13 @@ const About = () => {
 
   return (
     <section className="about-section" id="about">
+      <div className="about-header">
+        <p className="section-eyebrow">Get To Know</p>
+        <h2 className="section-title">
+          About <span className="highlight">Me</span>
+        </h2>
+      </div>
+
       <div className="about-container">
 
         {/* LEFT CONTENT */}

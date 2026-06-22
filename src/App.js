@@ -1,5 +1,6 @@
 import './App.css';
 import NavBar from './Components/NavBar';
+import Home from './Components/Home';
 import About from './Components/About';
 import SkillsSection from './Components/Skills';
 import Projects from './Components/Projects';
@@ -11,6 +12,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <NavBar />
+        <Home />
         <About />
         <SkillsSection />
         <Projects />

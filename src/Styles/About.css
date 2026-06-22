@@ -4,9 +4,15 @@
 
 .about-section {
   min-height: 100vh;
-  padding: 0 12%;
+  padding: 100px 12%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Header */
+.about-header {
+  margin-bottom: 0px;
 }
 
 /* Container */
@@ -167,7 +173,7 @@
 
 /* Profile Image */
 .profile-img-wrapper img {
-  width: 360px;
+  width: 330px;
   max-width: 100%;
   border-radius: 20px;
   z-index: 1000;
@@ -214,8 +220,12 @@
 
 @media (max-width: 900px) {
   .about-section {
-    margin: 0 3%;
-    margin-top: 30px;
+    padding: 70px 6%;
+  }
+
+  .about-header {
+    text-align: center;
+    margin-bottom: 36px;
   }
 
   .about-container {
