@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import "../Styles/Home.css";
 import profileImg from "../assets/profileImg.png";
 
@@ -16,7 +16,6 @@ const professions = [
 const Home = () => {
   const [profIndex, setProfIndex] = useState(0);
   const [animKey, setAnimKey] = useState(0);
-  const imgRef = useRef(null);
 
   // Cycle through professions every 3s
   useEffect(() => {
@@ -81,12 +80,11 @@ const Home = () => {
         <div className="home__image-wrap">
           <div className="home__blob" />
           <img
-            ref={imgRef}
             src={profileImg}
             alt="Keshan Udayanga"
             className="home__profile-img"
           />
-          <div className="home__img-shadow" />
+
         </div>
 
         {/* RIGHT — profession */}
@@ -115,9 +113,9 @@ const Home = () => {
       </div>
 
       {/* ── Scroll indicator ─────────────────────────── */}
-      <div className="home__scroll-indicator">
+      {/* <div className="home__scroll-indicator">
         <span className="home__scroll-dot" />
-      </div>
+      </div> */}
     </section>
   );
 };

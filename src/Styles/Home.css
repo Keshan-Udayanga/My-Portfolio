@@ -17,7 +17,7 @@
 .home__grid {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  align-items: center;
+  align-items: end;
   gap: 0 40px;
   width: 100%;
   max-width: 1200px;
@@ -30,6 +30,7 @@
 /* ── LEFT — greeting + name ──────────────────────────────── */
 .home__data {
   text-align: left;
+  align-self: center;
   animation: fadeSlideLeft 0.9s ease both;
 }
 
@@ -70,8 +71,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 340px;
-  height: 480px;
+  align-self: flex-end;
+  width: 380px;
+  height: calc(100vh - 80px);
   flex-shrink: 0;
 }
 
@@ -112,13 +114,22 @@
 .home__profile-img {
   position: relative;
   z-index: 1;
-  bottom: -15%;
-  width: 400px;
-  max-width: 130%;
+  width: 600px;
+  max-width: 110%;
   object-fit: cover;
   object-position: top;
   border-radius: 18px 18px 0 0;
   display: block;
+  top: -10%;
+
+  -webkit-mask-image: linear-gradient(to top,
+      transparent 0%,
+      black 12%,
+      black 100%);
+  mask-image: linear-gradient(to top,
+      transparent 0%,
+      black 12%,
+      black 100%);
 }
 
 @keyframes homeImgFloat {
@@ -139,7 +150,9 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 200px;
+  height: 220px;
+  width: 700px;
+  background: linear-gradient(to top, var(--color-bg-main) 0%, transparent 100%);
   z-index: 2;
   pointer-events: none;
 }
@@ -147,6 +160,7 @@
 /* ── RIGHT — profession cycling text ─────────────────────── */
 .home__info {
   text-align: right;
+  align-self: center;
   animation: fadeSlideRight 0.9s ease both;
 }
 
@@ -331,54 +345,68 @@
   .home__grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    padding: 0px 24px 40px;
+    align-items: center;
+    padding: 100px 24px 60px;
     text-align: center;
-    gap: 24px;
+    gap: 20px;
     justify-items: center;
+    height: auto;
+    min-height: 100vh;
   }
 
   .home__data {
     text-align: center;
+    align-self: center;
     order: 1;
   }
 
   .home__image-wrap {
     order: 2;
     width: 260px;
-    height: 360px;
-    bottom: -10%;
+    height: 340px;
+    align-self: center;
   }
 
   .home__profile-img {
-    width: 350px;
+    width: 240px;
+    max-width: 100%;
+    top: 0;
   }
 
   .home__blob {
     width: 220px;
     height: 220px;
+    top: 0;
   }
 
   .home__info {
     text-align: center;
+    align-self: center;
     order: 3;
   }
 
   .home__profession-line {
     white-space: normal;
+    text-align: center;
   }
 
   .home__social-bar {
-    left: 12px;
-    bottom: 50px;
+    left: 20px;
+    bottom: 80px;
   }
 
   .home__cv-bar {
-    right: 12px;
-    bottom: 50px;
+    right: 20px;
+    bottom: 80px;
   }
 }
 
 @media (max-width: 480px) {
+  .home__grid {
+    padding: 90px 16px 50px;
+    gap: 16px;
+  }
+
   .home__name {
     font-size: 2rem;
   }
@@ -389,10 +417,30 @@
 
   .home__image-wrap {
     width: 220px;
-    height: 300px;
+    height: 280px;
+    align-self: center;
+    justify-content: center;
   }
 
   .home__profile-img {
     width: 200px;
+    max-width: 100%;
+    top: 0;
+  }
+
+  .home__blob {
+    width: 180px;
+    height: 180px;
+    top: 0;
+  }
+
+  .home__social-bar {
+    left: 10px;
+    bottom: 60px;
+  }
+
+  .home__cv-bar {
+    right: 10px;
+    bottom: 60px;
   }
 }

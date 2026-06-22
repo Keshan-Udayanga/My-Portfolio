@@ -31,7 +31,7 @@ const NavBar = () => {
 
           {/* CENTER (DESKTOP) */}
           <div className="nav-links">
-            <a href="#home">Home</a>
+            <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
@@ -60,7 +60,7 @@ const NavBar = () => {
 
       {/* MOBILE SLIDE MENU */}
       <div className={`mobile-menu ${menuOpen ? "show" : ""}`}>
-        <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
+        <a href="#" onClick={() => setMenuOpen(false)}>Home</a>
         <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
         <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
         <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
