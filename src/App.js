@@ -6,6 +6,7 @@ import SkillsSection from './Components/Skills';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import { BrowserRouter } from "react-router-dom";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <SkillsSection />
         <Projects />
         <Contact />
+        <Analytics />
       </div>
     </BrowserRouter>
   );
