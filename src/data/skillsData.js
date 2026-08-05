@@ -2,12 +2,12 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaJs,
-  FaBootstrap,
   FaPython,
   FaJava,
   FaDatabase,
   FaFigma,
   FaFileExcel,
+  FaChartBar,
 } from "react-icons/fa";
 
 import {
@@ -19,86 +19,78 @@ import {
   SiSpringboot,
   SiMysql,
   SiMongodb,
-  SiNumpy,
-  SiPandas,
-  SiScikitlearn,
-  SiTensorflow,
   SiPostgresql,
   SiReact,
-  SiPowerbi,
 } from "react-icons/si";
 
 
 export const skillsData = [
 
-  // Programming Languages
   {
     category: "Programming Languages",
     skills: [
       {
         name: "Python",
         Icon: FaPython,
-        color: "#3776ab"
+        color: "#3776ab",
       },
       {
         name: "Java",
         Icon: FaJava,
-        color: "#e36e14"
+        color: "#e36e14",
       },
       {
         name: "R",
         Icon: SiR,
-        color: "#276dc3"
+        color: "#276dc3",
       },
       {
         name: "C",
         Icon: SiC,
-        color: "#00599c"
+        color: "#00599c",
       },
     ],
   },
 
 
-  // Data Science & Analytics
   {
     category: "Data Science & Analytics",
     skills: [
       {
         name: "Pandas",
-        Icon: SiPandas,
+        Icon: FaDatabase,
         color: "#150458",
       },
       {
         name: "NumPy",
-        Icon: SiNumpy,
+        Icon: FaDatabase,
         color: "#013243",
       },
       {
         name: "Matplotlib",
-        Icon: FaDatabase,
+        Icon: FaChartBar,
         color: "#11557c",
       },
       {
         name: "Scikit-learn",
-        Icon: SiScikitlearn,
+        Icon: FaChartBar,
         color: "#f7931e",
       },
       {
-        name: "TensorFlow",
-        Icon: SiTensorflow,
+        name: "Machine Learning",
+        Icon: FaChartBar,
         color: "#ff6f00",
       },
     ],
   },
 
 
-  // Business Intelligence
   {
     category: "Business Intelligence",
     skills: [
       {
         name: "Power BI",
-        Icon: SiPowerbi,
+        Icon: FaChartBar,
         color: "#f2c811",
       },
       {
@@ -115,7 +107,6 @@ export const skillsData = [
   },
 
 
-  // Databases
   {
     category: "Databases",
     skills: [
@@ -143,7 +134,6 @@ export const skillsData = [
   },
 
 
-  // Frontend Development
   {
     category: "Front-End Development",
     skills: [
@@ -171,7 +161,6 @@ export const skillsData = [
   },
 
 
-  // Backend
   {
     category: "Backend Development",
     skills: [
@@ -184,7 +173,6 @@ export const skillsData = [
   },
 
 
-  // UI/UX
   {
     category: "UI / UX Design",
     skills: [
@@ -197,7 +185,6 @@ export const skillsData = [
   },
 
 
-  // Graphic Design
   {
     category: "Graphic Design Tools",
     skills: [
