@@ -27,13 +27,31 @@ import SmartCampusImg10 from "../assets/Smart_Campus/image_10.png";
 import SmartCampusImg11 from "../assets/Smart_Campus/image_11.png";
 import SmartCampusVideo from "../assets/Smart_Campus/video.mp4";
 
+import VehicleAnalysisImage1 from "../assets/Vehicle_Market_Analysis/overview.png"
+import VehicleAnalysisImage2 from "../assets/Vehicle_Market_Analysis/overview2.png"
+import VehicleAnalysisImage3 from "../assets/Vehicle_Market_Analysis/price_analysis.png"
+import VehicleAnalysisImage4 from "../assets/Vehicle_Market_Analysis/vehicle_specification.png"
+import VehicleAnalysisImage5 from "../assets/Vehicle_Market_Analysis/vehicle_specification2.png"
+
+
+
 export const projectsData = [
+
+  {
+    title: "Vehicle Market Analysis & Business Intelligence Dashboard",
+    description: "Developed an end-to-end business intelligence solution by cleaning and analysing the vehicle market data using Python and building an interactive multi-page Power BI dashboard. The project delivers executive-level insights into vehicle pricing, brand performance, fuel preferences, and market trends through interactive visualisations and business-focused analytics.",
+    image: VehicleAnalysisImage1,
+    images: [VehicleAnalysisImage1, VehicleAnalysisImage2, VehicleAnalysisImage3, VehicleAnalysisImage4, VehicleAnalysisImage5],
+    tech: ["Python", "Power BI", "Data Analysis", "Data Visualization", "Business Intelligence"],
+    live: "#",
+    github: "https://github.com/Keshan-Udayanga/vehicle-market-analytics-dashboard",
+  },
   {
     title: "Smart Campus Management System",
     description:
       "A full-stack campus resource management platform built with React.js, Spring Boot, and MongoDB. Developed the Resource Catalog Module with resource management, categorization, and search features while integrating Google OAuth authentication and RESTful APIs.",
     image: SmartCampusImg1,
-    images: [SmartCampusImg1, SmartCampusImg2, SmartCampusImg3,SmartCampusImg4,SmartCampusImg5,SmartCampusImg6,SmartCampusImg7,SmartCampusImg8,SmartCampusImg9,SmartCampusImg10,SmartCampusImg11,SmartCampusVideo],
+    images: [SmartCampusImg1, SmartCampusImg2, SmartCampusImg3, SmartCampusImg4, SmartCampusImg5, SmartCampusImg6, SmartCampusImg7, SmartCampusImg8, SmartCampusImg9, SmartCampusImg10, SmartCampusImg11, SmartCampusVideo],
     tech: ["React.js", "Spring Boot", "Java", "MongoDB", "Google OAuth"],
     live: "#",
     github:
